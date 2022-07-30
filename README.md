@@ -13,7 +13,7 @@
 
 ## Overview
 
-![screenshot](./design/desktop-preview.jpg)
+![screenshot](./design/preview.jpg)
 
 ###### Description:
 
