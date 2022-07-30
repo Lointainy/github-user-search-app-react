@@ -1,21 +1,20 @@
 //Base style for container
 @mixin container {
-  // background-color: #aaa; // test-color
   @each $name, $value in $grid-bp {
     @media (min-width: $value) {
-      @if $name == xxl {
-        padding: 0 calc(50% - #{calc(($container-mw) / 2)});
-      } @else if $value == 0 {
+      @if ($value == 0) {
         padding: 0 $grid-space-side;
+      } @else if ($container-mw > $value) {
+        padding: 0 calc(math.div(calc(100% - $value), 2));
       } @else {
-        padding: 0 calc(50% - #{calc(($value) / 2)} +$grid-space-side);
+        padding: 0 calc(math.div(calc(100% - $container-mw), 2));
       }
     }
   }
 }
 
 @mixin container-width($value) {
-  $value: map-get($container-value, $value);
+  $value: map.get($container-value, $value);
 
   max-width: $value;
 } // container width
