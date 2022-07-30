@@ -13,6 +13,10 @@ input {
   all: unset;
 }
 
+input[type='search'] {
+  cursor: text;
+}
+
 :root {
   --background-color: #{$color-ghost-white};
   --input-color: #{$color-light-white};
