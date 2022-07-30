@@ -1,3 +1,24 @@
 body {
   font-family: 'Space Mono', monospace;
+  background-color: var(--background-color);
+}
+
+:root {
+  --background-color: #{$color-ghost-white};
+  --input-color: #{$color-light-white};
+  --button-color: #{$color-azure};
+  --title-color: #{$color-gunmetal};
+  --text-color: #{$color-queen-blue};
+  --bio-color: #{$color-slate-gray};
+  --bs-color: #{$theme-light-bs};
+}
+
+:root.dark-theme {
+  --background-color: #{$color-dark-gunmetal};
+  --input-color: #{$color-yankees-blue};
+  --button-color: #{$color-azure};
+  --title-color: #{$color-white};
+  --text-color: #{$color-white};
+  --bio-color: #{$color-white};
+  --bs-color: #{none};
 }
