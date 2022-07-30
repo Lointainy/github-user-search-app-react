@@ -1,12 +1,17 @@
+@use 'sass:math';
 //Base style for container
 @mixin container {
   @each $name, $value in $grid-bp {
     @media (min-width: $value) {
       @if ($value == 0) {
         padding: 0 $grid-space-side;
-      } @else if ($container-mw > $value) {
+      }
+
+      @else if ($container-mw > $value) {
         padding: 0 calc(math.div(calc(100% - $value), 2));
-      } @else {
+      }
+
+      @else {
         padding: 0 calc(math.div(calc(100% - $container-mw), 2));
       }
     }
