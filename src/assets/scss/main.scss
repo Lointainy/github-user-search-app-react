@@ -4,6 +4,10 @@ body {
   background-color: var(--background-color);
 }
 
+button {
+  all: unset;
+}
+
 :root {
   --background-color: #{$color-ghost-white};
   --input-color: #{$color-light-white};
@@ -12,6 +16,7 @@ body {
   --text-color: #{$color-queen-blue};
   --bio-color: #{$color-slate-gray};
   --bs-color: #{$theme-light-bs};
+  --logo-color: #{#222731};
 }
 
 :root.dark-theme {
@@ -22,4 +27,5 @@ body {
   --text-color: #{$color-white};
   --bio-color: #{$color-white};
   --bs-color: #{none};
+  --logo-color: #{$color-white};
 }
