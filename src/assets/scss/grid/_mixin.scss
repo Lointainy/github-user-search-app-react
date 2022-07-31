@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 //Custom media query
 @mixin mediaWidth($width, $value) {
   $value: map.get($media-value, $value);
