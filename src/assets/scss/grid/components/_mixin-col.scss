@@ -1,0 +1,10 @@
+// Base style for all columns
+@mixin col($size) {
+  flex: 0 0 auto;
+  width: calc(#{percentage(calc($size / $grid-columns))} - #{$grid-space});
+  margin: 0 $grid-space-side;
+}
+
+@mixin offset($size) {
+  margin-left: calc((#{percentage(calc($size / $grid-columns))} - #{$grid-space}) + ((#{$grid-space-side}) * 3));
+} // offset for columns
