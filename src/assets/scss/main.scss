@@ -17,6 +17,18 @@ input[type='search'] {
   cursor: text;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+}
+
 :root {
   --background-color: #{$color-ghost-white};
   --input-color: #{$color-light-white};
