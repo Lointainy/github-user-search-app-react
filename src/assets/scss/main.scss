@@ -29,6 +29,10 @@ ul {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   --background-color: #{$color-ghost-white};
   --input-color: #{$color-light-white};
