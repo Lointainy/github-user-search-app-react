@@ -5,14 +5,10 @@
     @media (min-width: $value) {
       @if ($value == 0) {
         padding: 0 $grid-space-side;
-      }
-
-      @else if ($container-mw > $value) {
-        padding: 0 calc(math.div(calc(100% - $value), 2));
-      }
-
-      @else {
-        padding: 0 calc(math.div(calc(100% - $container-mw), 2));
+      } @else if ($container-mw > $value) {
+        padding: 0 calc((calc(100% - $value) / 2));
+      } @else {
+        padding: 0 calc((calc(100% - $container-mw) / 2));
       }
     }
   }
