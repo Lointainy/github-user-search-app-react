@@ -5,8 +5,6 @@ export const CustomContext = createContext()
 export const Context = (props) => {
   const [user, setUser] = useState([])
   const [search, setSearch] = useState('')
-  const [onSearch, setOnSearch] = useState(false)
-
   const [loading, setLoading] = useState(false)
 
   const handleSearch = (event) => {
@@ -14,7 +12,7 @@ export const Context = (props) => {
   }
 
   const handleClick = () => {
-    setOnSearch(true)
+    setLoading(true)
   }
 
   const API = 'https://api.github.com/users/'
@@ -78,15 +76,18 @@ export const Context = (props) => {
 
   useEffect(() => {
     getDataUser()
-    setOnSearch(false)
-  }, [onSearch])
+    setTimeout(() => {
+      setLoading(false)
+    }, 5000)
+    console.log(user)
+  }, [loading])
 
   const value = {
     user,
     search,
     handleSearch,
     handleClick,
-    onSearch,
+    loading,
   }
 
   return <CustomContext.Provider value={value}>{props.children}</CustomContext.Provider>
