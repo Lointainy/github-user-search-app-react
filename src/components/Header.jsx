@@ -21,14 +21,12 @@ export const Header = () => {
     document.documentElement.className = userTheme
   }, [userTheme])
 
-  console.log()
-
   return (
     <div className="header">
       <div className="header__logo">devfinder</div>
       <div className="header__switch">
         <button onClick={() => toggleTheme()} className="header__switch-toggle">
-          {userTheme !== 'dark-theme' ? (
+          {!document.body.classList.contains('dark-theme') ? (
             <>
               Dark
               <FontAwesomeIcon className="header__switch-toggle-icon" icon="moon" />
