@@ -16,14 +16,10 @@ export const Context = (props) => {
   }
 
   const API = 'https://api.github.com/users/'
-  const TOKEN = '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'
 
   const getDataUser = () => {
     if (search.length > 0) {
-      fetch(`${API}${search}`, {
-        method: 'GET',
-        headers: { Authorization: `token ${TOKEN}` },
-      })
+      fetch(`${API}${search}`)
         .then((res) => res.json())
         .then((data) =>
           setUser({
