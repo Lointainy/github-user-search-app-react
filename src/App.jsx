@@ -15,7 +15,7 @@ export const App = () => {
     <div className="app">
       <Header />
       <Search />
-      {user != '' ? loading ? <Preloader /> : <Card user={user} /> : ''}
+      {user != '' && user.login != undefined ? loading ? <Preloader /> : <Card user={user} /> : ''}
     </div>
   )
 }
