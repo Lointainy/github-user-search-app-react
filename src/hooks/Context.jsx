@@ -78,7 +78,7 @@ export const Context = (props) => {
     getDataUser()
     setTimeout(() => {
       setLoading(false)
-    }, 5000)
+    }, 1000)
     console.log(user)
   }, [loading])
 
