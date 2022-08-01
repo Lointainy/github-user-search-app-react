@@ -1,0 +1,6 @@
+[[redirects]]
+  from = "/api"
+  to = "https://api.github.com/users/"
+  status = 200
+  force = true
+  headers = {Authorization = "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"}
