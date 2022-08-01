@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: 'Space Mono', monospace;
+  background-color: var(--background-color);
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+input {
+  all: unset;
+}
+
+input[type='search'] {
+  cursor: text;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --background-color: #{$color-ghost-white};
+  --input-color: #{$color-light-white};
+  --button-color: #{$color-azure};
+  --title-color: #{$color-gunmetal};
+  --text-color: #{$color-queen-blue};
+  --bio-color: #{$color-slate-gray};
+  --bs-color: #{$theme-light-bs};
+  --logo-color: #{#222731};
+}
+
+:root.dark-theme {
+  --background-color: #{$color-dark-gunmetal};
+  --input-color: #{$color-yankees-blue};
+  --button-color: #{$color-azure};
+  --title-color: #{$color-white};
+  --text-color: #{$color-white};
+  --bio-color: #{$color-white};
+  --bs-color: #{none};
+  --logo-color: #{$color-white};
+}

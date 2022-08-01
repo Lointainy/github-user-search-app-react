@@ -1,0 +1,6 @@
+//Base style for row
+@mixin row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 (-$grid-space-side);
+}

@@ -1,0 +1,21 @@
+@use 'sass:math';
+//Base style for container
+@mixin container {
+  @each $name, $value in $grid-bp {
+    @media (min-width: $value) {
+      @if ($value == 0) {
+        padding: 0 $grid-space-side;
+      } @else if ($container-mw > $value) {
+        padding: 0 calc((calc(100% - $value) / 2));
+      } @else {
+        padding: 0 calc((calc(100% - $container-mw) / 2));
+      }
+    }
+  }
+}
+
+@mixin container-width($value) {
+  $value: map.get($container-value, $value);
+
+  max-width: $value;
+} // container width
