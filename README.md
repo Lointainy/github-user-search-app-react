@@ -32,10 +32,11 @@ Your [challenge](https://www.frontendmentor.io/challenges/github-user-search-app
   - [stylelint](https://stylelint.io/)
   - [sass](https://sass-lang.com/)
   - [fontsource](https://fontsource.org/docs/getting-started)
+  - [fontawesome](https://fontawesome.com/)
 - [REACT](https://reactjs.org/) - framework / function component
 - [Vite](https://vitejs.dev/) - module bundler
 
-###### What i learned
+###### What i learned / trained
 
 - REACT
   - Components
@@ -52,9 +53,8 @@ Your [challenge](https://www.frontendmentor.io/challenges/github-user-search-app
 
 ![complete](https://img.shields.io/badge/project_created:-30.07.2022-333?style=for-the-badge&labelColor=e7901f)
 
-![update](https://img.shields.io/badge/last_update:-30.07.22-333?style=for-the-badge&labelColor=1fe783)
+![update](https://img.shields.io/badge/last_update:-01.08.22-333?style=for-the-badge&labelColor=1fe783)
 
 ###### Author
 
 [![Lointainy](https://img.shields.io/badge/-lointainy-333?style=for-the-badge&logo=github&&logoColor=FFF)](https://github.com/Lointainy)
-

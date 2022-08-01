@@ -175,6 +175,7 @@
         display: flex;
         align-items: center;
         color: var(--text-color);
+        cursor: pointer;
 
         .item-icon {
           margin-right: 1.25rem;
@@ -190,6 +191,10 @@
             font-size: 0.8125rem;
           }
         }
+      }
+
+      &-item[disabled] {
+        opacity: 0.5;
       }
     }
   }

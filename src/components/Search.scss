@@ -31,9 +31,14 @@
       background-color: var(--input-color);
       border-radius: $border-radius;
       box-shadow: var(--bs-color);
+      transition: outline ease-in-out 0.1s;
 
       &::placeholder {
         color: var(--text-color);
+      }
+
+      &:focus {
+        outline: 2px solid var(--button-color);
       }
     }
 
