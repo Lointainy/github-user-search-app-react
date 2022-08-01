@@ -16,7 +16,7 @@ export const Context = (props) => {
   }
 
   const API = 'https://api.github.com/users/'
-  const TOKEN = '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'
+  const TOKEN = 'facf0ddda935be29539342cb66aa005bbb33d8e3'
 
   const getDataUser = () => {
     if (search.length > 0) {
