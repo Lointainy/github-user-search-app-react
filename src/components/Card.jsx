@@ -21,7 +21,7 @@ export const Card = ({ user }) => {
         </div>
         <div className="card__header">
           <div className="card__header-title">
-            <div className="card__header-title-name">{user.name}</div>
+            <div className="card__header-title-name">{user.name ? user.name : 'Not avaible'}</div>
             <a href={user.userUrl} className="card__header-title-link">
               @{user.login}
             </a>
