@@ -21,8 +21,6 @@ export const Header = () => {
     document.documentElement.className = userTheme
   }, [userTheme])
 
-  console.log()
-
   return (
     <div className="header">
       <div className="header__logo">devfinder</div>
