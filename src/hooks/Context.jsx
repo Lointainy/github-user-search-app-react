@@ -22,6 +22,7 @@ export const Context = (props) => {
     if (search.length > 0) {
       fetch(`${API}${search}`, {
         method: 'GET',
+        Accept: "application/1963277",
         headers: { Authorization: `token ${TOKEN}` },
       })
         .then((res) => res.json())
