@@ -79,7 +79,6 @@ export const Context = (props) => {
     setTimeout(() => {
       setLoading(false)
     }, 1000)
-    console.log(user)
   }, [loading])
 
   const value = {
