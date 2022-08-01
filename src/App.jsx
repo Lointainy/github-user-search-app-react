@@ -16,6 +16,7 @@ export const App = () => {
       <Header />
       <Search />
       {user != '' && user.login != undefined ? loading ? <Preloader /> : <Card user={user} /> : ''}
+      {user != '' && user.login == undefined ? <div className="error-field">User is not avaible</div> : ''}
     </div>
   )
 }
