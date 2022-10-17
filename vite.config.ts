@@ -12,6 +12,8 @@ export default defineConfig({
       scss: {
         additionalData: `
         @use "sass:math";
+        @import "@/assets/scss/partials";
+        @import "@/assets/scss/grid";
         `,
       },
     },
