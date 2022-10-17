@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Header.scss'
 
-export const Header = () => {
+const Header = () => {
   const [userTheme, setUserTheme] = useState(localStorage.getItem('user-theme') || 'light-theme')
 
   const toggleTheme = () => {
@@ -36,3 +36,5 @@ export const Header = () => {
     </div>
   )
 }
+
+export default Header

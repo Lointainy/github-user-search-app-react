@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import { CustomContext } from '../hooks/Context'
 
 import './Search.scss'
 
-export const Search = () => {
+const Search = () => {
   const { search, handleSearch, handleClick } = useContext(CustomContext)
   return (
     <div className="search">
@@ -28,3 +28,5 @@ export const Search = () => {
     </div>
   )
 }
+
+export default Search

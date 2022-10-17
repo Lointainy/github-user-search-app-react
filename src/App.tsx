@@ -2,10 +2,7 @@ import { useContext } from 'react'
 import { CustomContext } from './hooks/Context'
 
 /* Components */
-import { Header } from './components/Header'
-import { Search } from './components/Search'
-import { Card } from './components/Card'
-import { Preloader } from './components/Preloader'
+import { Card, Header, Preloader, Search } from './components'
 
 import './App.scss'
 

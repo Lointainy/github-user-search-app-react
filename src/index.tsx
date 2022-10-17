@@ -7,8 +7,8 @@ import { App } from './App'
 
 /* Icons library */
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faMoon, faSun, faSearch, faLocationDot, faLink, faBuilding } from '@fortawesome/free-solid-svg-icons'
-import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faBuilding, faLink, faLocationDot, faMoon, faSearch, faSun } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faTwitter, faGithub, faMoon, faSun, faSearch, faLocationDot, faLink, faBuilding)
 
@@ -16,7 +16,7 @@ library.add(faTwitter, faGithub, faMoon, faSun, faSearch, faLocationDot, faLink,
 import '@/assets/scss/main.scss'
 import '@fontsource/space-mono' //font
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <Context>
       <App />

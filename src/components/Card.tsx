@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //style
 import './Card.scss'
 
-export const Card = ({ user }) => {
+const Card = ({ user }) => {
   const userJoinedDate =
     'Joined' +
     ' ' +
@@ -57,3 +57,5 @@ export const Card = ({ user }) => {
     </div>
   )
 }
+
+export default Card
