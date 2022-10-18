@@ -1,30 +1,39 @@
+/* Icons */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import { useContext } from 'react'
-import { CustomContext } from '../hooks/Context'
-
+/* Style */
 import './Search.scss'
 
-export const Search = () => {
-  const { search, handleSearch, handleClick } = useContext(CustomContext)
+/* Types */
+interface props {
+  search: string
+  handleChangeSearch: (e: string) => void
+  handleClickSearch: () => void
+}
+
+const Search: React.FC<props> = ({ search, handleChangeSearch, handleClickSearch }) => {
   return (
     <div className="search">
       <label className="search-field" htmlFor="search-input">
         <FontAwesomeIcon className="search-field__icon" icon="search" />
         <input
           value={search}
-          onKeyPress={(event) => (event.key === 'Enter' ? handleClick() : '')}
-          onChange={(event) => handleSearch(event)}
+          onKeyDown={(e) => {
+            e.code === 'Enter' ? handleClickSearch() : ''
+          }}
+          onChange={(e) => handleChangeSearch(e.target.value)}
           className="search-field__input"
           type="search"
           name="search"
           id="search-input"
           placeholder="Search GitHub username…"
         />
-        <button onClick={(event) => handleClick()} className="search-field__btn">
+        <button className="search-field__btn" onClick={handleClickSearch}>
           search
         </button>
       </label>
     </div>
   )
 }
+
+export default Search
