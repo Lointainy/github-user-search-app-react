@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Context } from './hooks/Context'
 
 /* Components */
 import { App } from './App'
@@ -18,8 +17,6 @@ import '@fontsource/space-mono' //font
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <Context>
-      <App />
-    </Context>
+    <App />
   </React.StrictMode>
 )

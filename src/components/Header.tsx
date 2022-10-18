@@ -1,16 +1,19 @@
 import { useEffect, useState } from 'react'
 
+/* Icons */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+/* Style */
 import './Header.scss'
 
-const Header = () => {
-  const [userTheme, setUserTheme] = useState(localStorage.getItem('user-theme') || 'light-theme')
+const Header: React.FC = () => {
+  const [userTheme, setUserTheme] = useState<string>(localStorage.getItem('user-theme') || 'light-theme')
 
-  const toggleTheme = () => {
+  const toggleTheme = (): void => {
     userTheme === 'dark-theme' ? setUserTheme('light-theme') : setUserTheme('dark-theme')
   }
 
-  useEffect(() => {
+  useEffect((): void => {
     localStorage.setItem('user-theme', userTheme)
     document.documentElement.className = userTheme
   }, [userTheme])

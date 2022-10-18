@@ -1,3 +1,4 @@
+/* Style */
 import './Preloader.scss'
 
 const Preloader = () => {
